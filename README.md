@@ -54,30 +54,77 @@ Follow these steps to set up and run the project locally.
 
 First, clone this repository to your local machine:
 git clone [https://github.com/vishakh25/Resume-Analyzer-AI.git](https://github.com/vishakh25/Resume-Analyzer-AI.git)
-cd Resume-Analyzer-AI
 
 ### 2. Backend Setup
 
 Navigate into the backend directory:
 
-Bash
+``Bash
+cd resume-analyzer-backend``
 
-cd resume-analyzer-backend
 a. Create a Virtual Environment (Recommended)
-Bash
 
-python -m venv venv
+``Bash
+python -m venv venv``
+
 b. Activate the Virtual Environment
 On Windows (Command Prompt):
-Bash
 
-.\venv\Scripts\activate
+``Bash
+.\venv\Scripts\activate``
+
 On macOS/Linux (or Git Bash/WSL on Windows):
-Bash
 
-source venv/bin/activate
+``Bash
+source venv/bin/activate``
+
 c. Install Dependencies
-Bash
 
-pip install -r requirements.txt
+``Bash
+pip install -r requirements.txt``
+Then, ensure this requirements.txt file is committed to your repository
+
+d. Configure Environment Variables
+Create a file named .env in the resume-analyzer-backend directory (the same level as manage.py).
+
+Add your Google Gemini API key to this file:
+
+``GOOGLE_API_KEY=your_gemini_api_key_here``
+
+IMPORTANT: Replace your_gemini_api_key_here with your actual API key obtained from Google AI Studio. This .env file should NEVER be committed to Git or pushed to GitHub. It is included in the .gitignore to prevent this. If you accidentally committed it, you must remove it from your Git history and generate a new API key.
+
+e. Run Django Migrations
+
+``Bash
+python manage.py migrate``
+
+f. Start the Django Backend Server
+
+``Bash
+python manage.py runserver``
+
+The backend server will run on http://127.0.0.1:8000/. Keep this terminal window open.
+
+### 3. Frontend Setup
+Open a new terminal/command prompt window and navigate into the frontend directory. First, go back to the project root, then into the frontend:
+
+``Bash
+cd .. # Go back to the root project directory (resume-analyzer/)
+cd resume-analyzer-frontend``
+
+a. Install Dependencies
+
+``Bash
+npm install
+ OR (if you use Yarn)
+ yarn install``
+
+b. Start the React Development Server
+
+``Bash
+npm start
+OR (if you use Yarn)
+yarn start``
+
+The frontend application will open in your browser, usually at http://localhost:3000/. Keep this terminal window open.
 
