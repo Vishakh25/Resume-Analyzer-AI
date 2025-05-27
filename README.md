@@ -27,7 +27,7 @@ The project is built with a Django REST Framework backend and a React frontend, 
 ## Technologies Used
 
 ### Backend (Django REST Framework)
-* **Python 3.x**
+* **Python 3.10**
 * **Django REST Framework:** For building the RESTful API.
 * **Google Generative AI (Gemini API):** For AI-powered resume analysis.
 * **`python-decouple`:** For managing environment variables (API keys).
@@ -55,5 +55,5 @@ Follow these steps to set up and run the project locally.
 First, clone this repository to your local machine:
 
 ```bash
-git clone [https://github.com/vishakh25/Resume-Analyzer-AI.git](https://github.com/your-username/Resume-Analyzer-AI.git)
+git clone [https://github.com/vishakh25/Resume-Analyzer-AI.git](https://github.com/vishakh25/Resume-Analyzer-AI.git)
 cd Resume-Analyzer-AI
