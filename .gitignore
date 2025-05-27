@@ -1,0 +1,17 @@
+# Python
+*.pyc
+__pycache__/
+venv/         # Ignore your virtual environment folder
+.env          # Ignore your environment variable file (which contains API key)
+
+# Node.js
+node_modules/ # Ignore the folder where npm installs packages
+build/        # Ignore the build output folder for React
+.env.local    # Ignore local frontend environment variables
+
+# Operating System Files
+.DS_Store     # macOS specific hidden file
+Thumbs.db     # Windows specific hidden file
+
+# Other temporary/log files
+*.log
