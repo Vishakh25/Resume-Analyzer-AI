@@ -57,3 +57,22 @@ First, clone this repository to your local machine:
 ```bash
 git clone [https://github.com/vishakh25/Resume-Analyzer-AI.git](https://github.com/vishakh25/Resume-Analyzer-AI.git)
 cd Resume-Analyzer-AI
+2. Backend Setup
+Navigate into the backend directory:
+
+Bash
+
+cd resume-analyzer-backend
+a. Create a Virtual Environment (Recommended)
+Bash
+
+python -m venv venv
+b. Activate the Virtual Environment
+On Windows:
+Bash
+
+.\venv\Scripts\activate
+On macOS/Linux:
+Bash
+
+source venv/bin/activate
