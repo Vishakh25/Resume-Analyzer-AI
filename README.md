@@ -53,11 +53,11 @@ Follow these steps to set up and run the project locally.
 ### 1. Clone the Repository
 
 First, clone this repository to your local machine:
-
-```bash
 git clone [https://github.com/vishakh25/Resume-Analyzer-AI.git](https://github.com/vishakh25/Resume-Analyzer-AI.git)
 cd Resume-Analyzer-AI
-2. Backend Setup
+
+### 2. Backend Setup
+
 Navigate into the backend directory:
 
 Bash
@@ -68,11 +68,16 @@ Bash
 
 python -m venv venv
 b. Activate the Virtual Environment
-On Windows:
+On Windows (Command Prompt):
 Bash
 
 .\venv\Scripts\activate
-On macOS/Linux:
+On macOS/Linux (or Git Bash/WSL on Windows):
 Bash
 
 source venv/bin/activate
+c. Install Dependencies
+Bash
+
+pip install -r requirements.txt
+
